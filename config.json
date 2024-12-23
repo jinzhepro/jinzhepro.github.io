@@ -10,6 +10,7 @@
   "nightTheme":"dark_colorblind",
   "onePageListNum":15,
   "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
+  "showPostSource": 0,
   "homeUrl": "https://blog.jinzhepro.cc",
   "singlePage":["collection", "about", "douban", "github"],
   "allHead":"<script src='https://blog.jinzhepro.cc/plugins/GmeekVercount.js'></script><script src='https://blog.jinzhepro.cc/plugins/GmeekTOC.js'></script>",
