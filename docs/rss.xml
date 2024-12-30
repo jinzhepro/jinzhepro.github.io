@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>JinzhePro</title><link>https://blog.jinzhepro.cc</link><description>路漫漫其修远兮，吾将上下而求索。</description><copyright>JinzhePro</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://blog.jinzhepro.cc/logo.png</url><title>avatar</title><link>https://blog.jinzhepro.cc</link></image><lastBuildDate>Mon, 30 Dec 2024 09:14:12 +0000</lastBuildDate><managingEditor>JinzhePro</managingEditor><ttl>60</ttl><webMaster>JinzhePro</webMaster><item><title>日常问题</title><link>https://blog.jinzhepro.cc/post/ri-chang-wen-ti.html</link><description># Webpack&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>JinzhePro</title><link>https://blog.jinzhepro.cc</link><description>路漫漫其修远兮，吾将上下而求索。</description><copyright>JinzhePro</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://blog.jinzhepro.cc/logo.png</url><title>avatar</title><link>https://blog.jinzhepro.cc</link></image><lastBuildDate>Mon, 30 Dec 2024 09:31:46 +0000</lastBuildDate><managingEditor>JinzhePro</managingEditor><ttl>60</ttl><webMaster>JinzhePro</webMaster><item><title>如何选择开源许可证</title><link>https://blog.jinzhepro.cc/post/ru-he-xuan-ze-kai-yuan-xu-ke-zheng.html</link><description>```mermaid&#13;
+graph TB&#13;
+    A[选择许可证] --&gt;  B[修改源码后是否可以闭源] --&gt; |是| D[每一个修改过的文件是否都需要版权说明]--&gt; |是| E[Apache]&#13;
+    B--&gt;|否|F[新增代码是否采用同样许可证] --&gt; |是|G[GPL]&#13;
+    D--&gt;|否|H[是否可以用你的名字做广告促销] --&gt; |是|I[MIT]&#13;
+    H--&gt;|否|J[BSD]&#13;
+    F--&gt;|否|K[是否要对修改的源码进行说明]--&gt;|是|L[Mozilla]&#13;
+    K--&gt;|否|M[LGPL]&#13;
+```&#13;
+简单可以认为：&#13;
+- 只想好好写代码，其他我不管（MIT）&#13;
+- 我想保留专利，你们可以随意使用（Apache）&#13;
+- 我想让我的源码开枝散叶（GPL）&#13;
+。</description><guid isPermaLink="true">https://blog.jinzhepro.cc/post/ru-he-xuan-ze-kai-yuan-xu-ke-zheng.html</guid><pubDate>Mon, 30 Dec 2024 09:31:09 +0000</pubDate></item><item><title>日常问题</title><link>https://blog.jinzhepro.cc/post/ri-chang-wen-ti.html</link><description># Webpack&#13;
 &#13;
 ## 1. npm run build 自闭合标签问题和属性值引号问题&#13;
 &#13;
