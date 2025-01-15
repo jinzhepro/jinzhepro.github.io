@@ -1,4 +1,4 @@
-本文知识点是摘自于[[汤姆大叔博客](http://www.cnblogs.com/TomXu/)](http://www.cnblogs.com/TomXu/)，自己记录理解并学习
+本文知识点是摘自于[汤姆大叔博客](http://www.cnblogs.com/TomXu/)，自己记录理解并学习
 
 ## 书写可维护的代码
 
