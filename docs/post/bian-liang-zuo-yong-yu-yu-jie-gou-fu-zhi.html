@@ -216,7 +216,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><code class="notranslate">let</code>和<code class="notranslate">const</code>命令会形成"暂时性死区";，导致如果在声明之前使用该变量会报错!</p>
 <div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
 <span class="pl-kos">{</span>
-  <span class="pl-s1">a</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span> <span class="pl-pds"><span class="pl-c1">/</span> <span class="pl-c1">/</span></span><span class="pl-v">Uncaught</span> ReferenceError: <span class="pl-s1">a</span> <span class="pl-s1">is</span> <span class="pl-s1">not</span> <span class="pl-s1">defined</span>
+  <span class="pl-s1">a</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span> <span class="pl-pds"><span class="pl-c1">/</span><span class="pl-s"> </span><span class="pl-c1">/</span></span><span class="pl-v">Uncaught</span> ReferenceError: <span class="pl-s1">a</span> <span class="pl-s1">is</span> <span class="pl-s1">not</span> <span class="pl-s1">defined</span>
   <span class="pl-k">let</span> <span class="pl-s1">a</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span></pre></div>
 <h3>3. 数组和对象解构赋值</h3>
