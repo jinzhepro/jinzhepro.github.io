@@ -78,10 +78,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p>二叉查找树要求，在树中的任意一个节点，其左子树中的每个节点的值，都要小于这个节点的值，而右子树节点的值都大于这个节点的值。</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5f3d5fe6-bf65-4260-89ff-b0345719169a"><img src="https://github.com/user-attachments/assets/5f3d5fe6-bf65-4260-89ff-b0345719169a" alt="233033634-3e906fe0-e686-4495-897e-883341b182c1" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/5f3d5fe6-bf65-4260-89ff-b0345719169a"><img src="https://github.com/user-attachments/assets/5f3d5fe6-bf65-4260-89ff-b0345719169a" alt="233033634-3e906fe0-e686-4495-897e-883341b182c1" style="max-width: 100%; height: auto;"></a></p>
 <h2>二叉查找树的查找</h2>
 <p>先取根节点，如果值比节点小就在左树递归，如果值比节点大就在右树递归。</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7bfeb064-c52b-4274-823b-be283e279716"><img src="https://github.com/user-attachments/assets/7bfeb064-c52b-4274-823b-be283e279716" alt="233034443-cdbcc6cb-62f4-4f85-8e8c-d9e7ca891c7b" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7bfeb064-c52b-4274-823b-be283e279716"><img src="https://github.com/user-attachments/assets/7bfeb064-c52b-4274-823b-be283e279716" alt="233034443-cdbcc6cb-62f4-4f85-8e8c-d9e7ca891c7b" style="max-width: 100%; height: auto;"></a></p>
 <h3>代码</h3>
 <div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">searchOrder</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">node</span><span class="pl-kos">,</span> <span class="pl-s1">val</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
   <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">node</span><span class="pl-kos">.</span><span class="pl-c1">value</span><span class="pl-kos">)</span> <span class="pl-k">return</span><span class="pl-kos">;</span>
@@ -103,7 +103,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h2>二叉查找树插入</h2>
 <p>如果数据比节点小，并且左子树为空，就插入到左子树位置；如果不为空，那就递归查找左子树。</p>
 <p>如果数据比节点大，并且右子树为空，就插入到右子树位置；如果不为空，那就递归查找右子树。</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/4ac87961-daca-49f7-8b2a-1da8fe2e4000"><img src="https://github.com/user-attachments/assets/4ac87961-daca-49f7-8b2a-1da8fe2e4000" alt="233234102-dc3382fa-d287-4c21-a43c-2fb0dde3e886" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/4ac87961-daca-49f7-8b2a-1da8fe2e4000"><img src="https://github.com/user-attachments/assets/4ac87961-daca-49f7-8b2a-1da8fe2e4000" alt="233234102-dc3382fa-d287-4c21-a43c-2fb0dde3e886" style="max-width: 100%; height: auto;"></a></p>
 <h3>代码</h3>
 <div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">insertOrder</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">node</span><span class="pl-kos">,</span> <span class="pl-s1">val</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
   <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-c1">!</span><span class="pl-s1">node</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
@@ -141,7 +141,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>左右节点都有的情况下需要查找右子树的最小节点替换当前节点。（18）</li>
 </ol>
 <p><em>也可用标记法，在不改变结构的情况下使用删除标记记录</em></p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b490b73c-abd8-4c73-aae0-863a4c9fe4a8"><img src="https://github.com/user-attachments/assets/b490b73c-abd8-4c73-aae0-863a4c9fe4a8" alt="233247422-94e753d7-9d7d-4cd7-8c3c-e315bbcfee0b" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b490b73c-abd8-4c73-aae0-863a4c9fe4a8"><img src="https://github.com/user-attachments/assets/b490b73c-abd8-4c73-aae0-863a4c9fe4a8" alt="233247422-94e753d7-9d7d-4cd7-8c3c-e315bbcfee0b" style="max-width: 100%; height: auto;"></a></p>
 <h2>代码</h2>
 <div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">removeOrder</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">node</span><span class="pl-kos">,</span> <span class="pl-s1">val</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>
   <span class="pl-k">let</span> <span class="pl-s1">n</span> <span class="pl-c1">=</span> <span class="pl-s1">node</span><span class="pl-kos">;</span> <span class="pl-c">// 存储树</span>

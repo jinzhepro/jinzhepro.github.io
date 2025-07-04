@@ -99,7 +99,7 @@ JavaScript中的对象是指一组组属性和值组成的集合</em></p>
 <p>JavaScript中使用原型和原型链实现继承。</p>
 <p>虽然在ES6中引入了class关键字，但那只是function的一个语法糖，其本质还是prototype。</p>
 <p>JavaScript中每个对象都有一个__proto__属性 ，__proto__指向了内存中另外一个对象，我们就把这个对象称之为对象的原型对象。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7f7dba10-55bc-4afa-98e5-8bca65207929"><img src="https://github.com/user-attachments/assets/7f7dba10-55bc-4afa-98e5-8bca65207929" alt="236162019-f107b0bb-b9fe-48b8-a22b-60d2f3461d4d" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7f7dba10-55bc-4afa-98e5-8bca65207929"><img src="https://github.com/user-attachments/assets/7f7dba10-55bc-4afa-98e5-8bca65207929" alt="236162019-f107b0bb-b9fe-48b8-a22b-60d2f3461d4d" style="max-width: 100%; height: auto;"></a></p>
 <h3>继承的实现</h3>
 <p>在开发中，我们不推荐直接修改对象的<code class="notranslate">__proto__</code>属性实现继承，而是要使用构造函数。</p>
 <p>所有现代的js引擎都深度优化了获取和设置对象属性的行为，因为这些都是一些常见的js操作。这些优化都是基于引擎对对象结构的认识上。当更改了对象的内部结构（如添加或删除该对象或其原型链中的对象的属性），将会使一些优化失效。修改<code class="notranslate">__proto__</code>属性实际上改变了继承结构本身，这可能是最具破坏性的修改。</p>

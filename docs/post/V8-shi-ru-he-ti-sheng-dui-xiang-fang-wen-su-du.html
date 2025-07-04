@@ -73,14 +73,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>常规属性（properties）和排序属性（element）</h2>
 <p>对象中的字符串属性被称为properties，是按照创建的顺序；数字属性被称为element，按照索引值大小排序。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e4e98bb8-ef37-4328-855b-3a38983844b0"><img src="https://github.com/user-attachments/assets/e4e98bb8-ef37-4328-855b-3a38983844b0" alt="233820717-b4213c8c-2c31-42bb-ba10-9085da32c522" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e4e98bb8-ef37-4328-855b-3a38983844b0"><img src="https://github.com/user-attachments/assets/e4e98bb8-ef37-4328-855b-3a38983844b0" alt="233820717-b4213c8c-2c31-42bb-ba10-9085da32c522" style="max-width: 100%; height: auto;"></a></p>
 <p>在对象bar内部分别使用了两个线性数据结构保存这两种属性，索引顺序element → properties</p>
 <h2>对象内属性</h2>
 <p>为了提升查找效率，V8实现了对象内属性策略，如果对象属性少于一定数量时，V8就会把这些属性直接写入对象中。如果多于一定数量时，V8就会将线性存储模式降级为非线性字典结构，这样虽然降低了查找速度，但是提升了修改速度。</p>
 <h3>数量少时</h3>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b03d2d75-aaea-46e7-9897-962b42ef63d9"><img src="https://github.com/user-attachments/assets/b03d2d75-aaea-46e7-9897-962b42ef63d9" alt="233820728-8330db15-a5a8-438f-bbaa-dac619738624" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b03d2d75-aaea-46e7-9897-962b42ef63d9"><img src="https://github.com/user-attachments/assets/b03d2d75-aaea-46e7-9897-962b42ef63d9" alt="233820728-8330db15-a5a8-438f-bbaa-dac619738624" style="max-width: 100%; height: auto;"></a></p>
 <h3>数量多时</h3>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0a9ad412-13db-424d-bef9-2af92f3ab8b8"><img src="https://github.com/user-attachments/assets/0a9ad412-13db-424d-bef9-2af92f3ab8b8" alt="233820736-2539bdd1-c741-422f-9227-b51f10515234" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0a9ad412-13db-424d-bef9-2af92f3ab8b8"><img src="https://github.com/user-attachments/assets/0a9ad412-13db-424d-bef9-2af92f3ab8b8" alt="233820736-2539bdd1-c741-422f-9227-b51f10515234" style="max-width: 100%; height: auto;"></a></p>
 <h2>隐藏类Map</h2>
 <p>描述了对象内的属性布局，包括对象名和偏移量，每次对象的修改都会更新隐藏类。</p>
 <h3>守护隐藏类</h3>

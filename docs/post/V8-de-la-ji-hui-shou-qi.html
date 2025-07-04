@@ -101,11 +101,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ul>
 <h3>Scavenge 算法（新生代）</h3>
 <p>在新生代中被划分为对象区和空闲区，新加入的对象全部加入对象区，当对象区快被写满时，就要进行一次垃圾回收操作。</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c7251646-92ab-4807-a785-386a403228bb"><img src="https://github.com/user-attachments/assets/c7251646-92ab-4807-a785-386a403228bb" alt="233526686-e6ff7885-80c1-4fa5-86bf-b3367affc303" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c7251646-92ab-4807-a785-386a403228bb"><img src="https://github.com/user-attachments/assets/c7251646-92ab-4807-a785-386a403228bb" alt="233526686-e6ff7885-80c1-4fa5-86bf-b3367affc303" style="max-width: 100%; height: auto;"></a></p>
 <h3>回收过程</h3>
 <p><strong>因为要做频繁的复制操作，所以新生代一般设置容量较小。</strong></p>
 <p>副垃圾回收器还会采用<strong>对象晋升策略</strong>，移动两次仍然还存在就把它移动到老生代中去。</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/38f2b10b-3fac-4d62-8259-6fe19d63de5b"><img src="https://github.com/user-attachments/assets/38f2b10b-3fac-4d62-8259-6fe19d63de5b" alt="233526851-25448ec7-81e2-46c6-af5e-d59afaeed3aa" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/38f2b10b-3fac-4d62-8259-6fe19d63de5b"><img src="https://github.com/user-attachments/assets/38f2b10b-3fac-4d62-8259-6fe19d63de5b" alt="233526851-25448ec7-81e2-46c6-af5e-d59afaeed3aa" style="max-width: 100%; height: auto;"></a></p>
 <ol>
 <li>垃圾标记</li>
 <li>副垃圾回收器把活动对象复制到空闲区，整理</li>

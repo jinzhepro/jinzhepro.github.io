@@ -90,14 +90,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <ul>
 <li>解释执行（启动快，执行慢）：源代码通过解析器编译成字节码，然后使用解释器解释执行字节码直接输出结果。</li>
 </ul>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fe2beaaf-bcb5-4810-9c32-5377f3ad94b9"><img src="https://github.com/user-attachments/assets/fe2beaaf-bcb5-4810-9c32-5377f3ad94b9" alt="233820555-2c654b4a-7c51-4ac1-a802-1b4e29df2bf9" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fe2beaaf-bcb5-4810-9c32-5377f3ad94b9"><img src="https://github.com/user-attachments/assets/fe2beaaf-bcb5-4810-9c32-5377f3ad94b9" alt="233820555-2c654b4a-7c51-4ac1-a802-1b4e29df2bf9" style="max-width: 100%; height: auto;"></a></p>
 <ul>
 <li>编译执行（启动慢，执行快）：源代码通过解析器编译成字节码，然后通过编译器编译为机器代码，机器代码可以通过内存或者文件的形式保存，然后直接执行二进制。</li>
 </ul>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/60a96dd5-d61b-4b1b-8df8-44b10b69f9e8"><img src="https://github.com/user-attachments/assets/60a96dd5-d61b-4b1b-8df8-44b10b69f9e8" alt="233820562-3570cf51-2122-4517-acb4-fe4aead0e281" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/60a96dd5-d61b-4b1b-8df8-44b10b69f9e8"><img src="https://github.com/user-attachments/assets/60a96dd5-d61b-4b1b-8df8-44b10b69f9e8" alt="233820562-3570cf51-2122-4517-acb4-fe4aead0e281" style="max-width: 100%; height: auto;"></a></p>
 <h2>V8的处理</h2>
 <p>融合解释执行和编译执行（Just In Time）：准备执行环境→解析源码生成AST和作用域→生成字节码→解释字节码输出结果→监控热点代码→热点代码编译为机器码执行→反优化生成的机器码（抛弃当前优化的二进制代码，回退使用字节码解释执行）<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b08227c2-254b-430f-bbf2-2346061d73de"><img src="https://github.com/user-attachments/assets/b08227c2-254b-430f-bbf2-2346061d73de" alt="233820591-45b1bab6-2809-40f8-991a-182539c5dae0" style="max-width: 100%;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b08227c2-254b-430f-bbf2-2346061d73de"><img src="https://github.com/user-attachments/assets/b08227c2-254b-430f-bbf2-2346061d73de" alt="233820591-45b1bab6-2809-40f8-991a-182539c5dae0" style="max-width: 100%; height: auto;"></a></p>
 <h2>字节码</h2>
 <p>V8早期并没有使用字节码，而是将JavaScript代码直接编译成机器码。为了提升性能，<strong>运行时将二进制存在内存中，并在浏览器退出时，缓存编译好的二进制到硬盘里</strong>。但是二进制实在是太大了，这种空间换时间的方法逐渐不可行，所以引入了字节码。</p>
 <ul>
