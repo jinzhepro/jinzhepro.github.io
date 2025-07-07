@@ -87,23 +87,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>B、C、D这三个节点的父节点是同一个节点，所以它们之间互称为<strong>兄弟节点</strong>。</li>
 <li>没有父节点的节点叫做<strong>根节点</strong>。</li>
 <li>没有子节点的节点叫做<strong>叶子节点</strong>。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b83b1b4d-39d2-4741-8d80-07518346a091"><img src="https://github.com/user-attachments/assets/b83b1b4d-39d2-4741-8d80-07518346a091" alt="232955263-166f7caa-4f83-4ab7-87f0-09ef65bf6fff" style="max-width: 100%; height: auto;"></a></li>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b83b1b4d-39d2-4741-8d80-07518346a091"><img src="https://github.com/user-attachments/assets/b83b1b4d-39d2-4741-8d80-07518346a091" alt="232955263-166f7caa-4f83-4ab7-87f0-09ef65bf6fff" style="max-width: 100%;"></a></li>
 </ul>
 <h2>高度、深度、层</h2>
 <p>高度和深度都是从0开始。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fb3a3e31-7afa-4806-ae65-2d4a510af121"><img src="https://github.com/user-attachments/assets/fb3a3e31-7afa-4806-ae65-2d4a510af121" alt="232954854-d732181c-d158-4959-b510-3136fe9d292e" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fb3a3e31-7afa-4806-ae65-2d4a510af121"><img src="https://github.com/user-attachments/assets/fb3a3e31-7afa-4806-ae65-2d4a510af121" alt="232954854-d732181c-d158-4959-b510-3136fe9d292e" style="max-width: 100%;"></a></p>
 <h2>满二叉树</h2>
 <p>叶子节点全都在最底层，除了叶子节点之外，每个节点都有左右两个子节点。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/48eee75c-d1b8-41e8-ba1b-f3c0e68fdc10"><img src="https://github.com/user-attachments/assets/48eee75c-d1b8-41e8-ba1b-f3c0e68fdc10" alt="232956156-33d190e8-2a0f-49f4-9367-6b8fe1fba75a" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/48eee75c-d1b8-41e8-ba1b-f3c0e68fdc10"><img src="https://github.com/user-attachments/assets/48eee75c-d1b8-41e8-ba1b-f3c0e68fdc10" alt="232956156-33d190e8-2a0f-49f4-9367-6b8fe1fba75a" style="max-width: 100%;"></a></p>
 <h2>完全二叉树</h2>
 <p>叶子节点都在最底下两层，最后一层叶子结点都靠左排列，除了最后一层，其他层的节点个数要达到最大。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7c157b95-041b-4fa5-ae1c-b3d7583ba643"><img src="https://github.com/user-attachments/assets/7c157b95-041b-4fa5-ae1c-b3d7583ba643" alt="232957866-a7856279-0f38-4d24-940f-c9e635e9f12f" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7c157b95-041b-4fa5-ae1c-b3d7583ba643"><img src="https://github.com/user-attachments/assets/7c157b95-041b-4fa5-ae1c-b3d7583ba643" alt="232957866-a7856279-0f38-4d24-940f-c9e635e9f12f" style="max-width: 100%;"></a></p>
 <h3>解析</h3>
 <p>基于数组的顺序存储法，根节点为1，左子节点为2i，右子节点为2i+1，父节点为Math.floor(i/2)，2<em>i&gt;n则i没有左子节点，2</em>i+1&gt;n则i没有右子节点。<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f5c4c914-efb0-4689-8f6e-4aab3b7f9d2b"><img src="https://github.com/user-attachments/assets/f5c4c914-efb0-4689-8f6e-4aab3b7f9d2b" alt="232958729-791a2af0-00ae-406f-bd05-b8defe0a5191" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f5c4c914-efb0-4689-8f6e-4aab3b7f9d2b"><img src="https://github.com/user-attachments/assets/f5c4c914-efb0-4689-8f6e-4aab3b7f9d2b" alt="232958729-791a2af0-00ae-406f-bd05-b8defe0a5191" style="max-width: 100%;"></a></p>
 <h2>遍历</h2>
 <p>复杂度O(n)<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/926a6052-5083-41b3-a76e-91aba51155e1"><img src="https://github.com/user-attachments/assets/926a6052-5083-41b3-a76e-91aba51155e1" alt="232976930-a858ddf1-b4bd-4a03-8fe8-3b6593396af0" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/926a6052-5083-41b3-a76e-91aba51155e1"><img src="https://github.com/user-attachments/assets/926a6052-5083-41b3-a76e-91aba51155e1" alt="232976930-a858ddf1-b4bd-4a03-8fe8-3b6593396af0" style="max-width: 100%;"></a></p>
 <h3>前序遍历</h3>
 <p>对于树中的任意节点来说，先打印这个节点，然后再打印它的左子树，最后打印它的右子树。</p>
 <div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-en">preOrder</span> <span class="pl-c1">=</span> <span class="pl-kos">(</span><span class="pl-s1">node</span><span class="pl-kos">)</span> <span class="pl-c1">=&gt;</span> <span class="pl-kos">{</span>

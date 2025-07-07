@@ -147,15 +147,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>随机访问</li>
 <li>插入,删除就要做大量的迁移工作</li>
 </ul>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/32a07dd3-76d2-4f9c-85af-b6b55dbb28fa"><img src="https://github.com/user-attachments/assets/32a07dd3-76d2-4f9c-85af-b6b55dbb28fa" alt="233517526-8c2eebaf-a4ec-4821-b410-0348c697da76" style="max-width: 100%; height: auto;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/32a07dd3-76d2-4f9c-85af-b6b55dbb28fa"><img src="https://github.com/user-attachments/assets/32a07dd3-76d2-4f9c-85af-b6b55dbb28fa" alt="233517526-8c2eebaf-a4ec-4821-b410-0348c697da76" style="max-width: 100%;"></a></p>
 <p>内存地址: <code class="notranslate">a[i]_address = base_address + i * data_type_size</code></p>
 <h2>低效的“插入”和“删除”</h2>
 <p>如果我们在数组最后插入或删除,复杂度为O(1),如果在中间为O(n)</p>
 <h3>优化</h3>
 <p>插入:如果数组只是数据集,数据没有规律的情况下,我们可以把插入变成移动.<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/262b3109-33cb-41e1-ad7d-db7d616e3391"><img src="https://github.com/user-attachments/assets/262b3109-33cb-41e1-ad7d-db7d616e3391" alt="233517689-105e8010-8c2e-4d10-9c7b-6d53b027a65d" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/262b3109-33cb-41e1-ad7d-db7d616e3391"><img src="https://github.com/user-attachments/assets/262b3109-33cb-41e1-ad7d-db7d616e3391" alt="233517689-105e8010-8c2e-4d10-9c7b-6d53b027a65d" style="max-width: 100%;"></a></p>
 <p>删除:记录删除数据,将多次删除合并为一次删除.<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e0243ecc-7bf0-4224-a6a2-ba3d94944948"><img src="https://github.com/user-attachments/assets/e0243ecc-7bf0-4224-a6a2-ba3d94944948" alt="233517704-a8e0e995-be70-4d08-a3d3-4b669646197d" style="max-width: 100%; height: auto;"></a></p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e0243ecc-7bf0-4224-a6a2-ba3d94944948"><img src="https://github.com/user-attachments/assets/e0243ecc-7bf0-4224-a6a2-ba3d94944948" alt="233517704-a8e0e995-be70-4d08-a3d3-4b669646197d" style="max-width: 100%;"></a></p>
 <h2>越界问题</h2>
 <p>访问到不属于该数组的一块内存地址上,造成bug.</p></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>

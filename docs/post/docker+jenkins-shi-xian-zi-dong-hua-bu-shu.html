@@ -146,7 +146,7 @@ EXPOSE 8081
 ENTRYPOINT [ <span class="pl-s"><span class="pl-pds">"</span>npm<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>start<span class="pl-pds">"</span></span> ]</pre></div>
 <h2>部署思路</h2>
 <p>我们部署的思路是jenkins连接ssh服务器（需要Publish Over SSH）进入到/home/jenkins/workspace/website-node工作目录里运行docker build和docker run 命令，理解思路即可。</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7505eca6-cc21-4937-a5af-314df6e218c9"><img width="969" alt="78467379-ce3cf300-773e-11ea-81e4-066a58754d28" src="https://github.com/user-attachments/assets/7505eca6-cc21-4937-a5af-314df6e218c9" style="max-width: 100%; height: auto;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7505eca6-cc21-4937-a5af-314df6e218c9"><img width="969" alt="78467379-ce3cf300-773e-11ea-81e4-066a58754d28" src="https://github.com/user-attachments/assets/7505eca6-cc21-4937-a5af-314df6e218c9" style="max-width: 100%;"></a></p>
 <h1>单页面的部署思路</h1>
 <p>以上是nodejs的部署，前端单页面使用linux scp命令直接上传到nginx静态页面目录下，因为服务器在npm install的时候经常崩溃（内存太小），所以退而求其次，在本地build之后把dist目录上传到服务器上。</p>
 <div class="highlight highlight-source-shell"><pre class="notranslate">npm run build <span class="pl-k">&amp;&amp;</span> scp -r build/<span class="pl-k">*</span> root@xxx.xxx.xxx.xxx:/home/nginx/www</pre></div></div>

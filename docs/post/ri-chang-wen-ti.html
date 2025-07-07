@@ -230,7 +230,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-kos">}</span><span class="pl-kos">;</span></pre></div>
 <p>查看了一下<code class="notranslate">react-intl/locale-data</code>下并没有类似于<code class="notranslate">zh_HK</code>或<code class="notranslate">zh_TW</code>的包，那么这个繁体中文的国际化在哪呢？</p>
 <p>经过我和同事的一番努力，在源码里，发现这个<code class="notranslate">addLocaleData</code>方法实际上是引用了<code class="notranslate">intl-messageformat</code>，我们在<code class="notranslate">intl-messageformat</code>的locale-data文件夹下发现了未编译的地点数据库文件，查看了<code class="notranslate">zh.js</code>，如下：</p>
-<p><a target="_blank" rel="noopener noreferrer" href="/images/git/react-intl.png"><img src="/images/git/react-intl.png" style="max-width: 100%; height: auto;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="/images/git/react-intl.png"><img src="/images/git/react-intl.png" style="max-width: 100%;"></a></p>
 <p>原来他们把中文简体和繁体都放在一起了，仔细看会发现，虽然上面罗列了八种中文字体，但是所以简体使用的是同一套规则，所有繁体也是同一套规则。</p>
 <p>明白了之后我们就可以这么写了：</p>
 <div class="highlight highlight-source-js"><pre class="notranslate"><span class="pl-k">const</span> <span class="pl-s1">langMap</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
